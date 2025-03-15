@@ -4,17 +4,19 @@
  */
 package GUI;
 
+import conexion.conexiondb;
+
 /**
  *
  * @author richa
  */
 public class Inicio extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Inicio
-     */
+    conexiondb conect = conexiondb.getInstance();
+    
     public Inicio() {
         initComponents();
+        conect.getConexion();
     }
 
     /**
@@ -69,10 +71,10 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\richa\\OneDrive\\Documentos\\NetBeansProjects\\anteiku\\anteiku\\src\\main\\java\\tamplates\\coffeeinter (3).png")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\dvill\\Documents\\NetBeansProjects\\Anteiku\\src\\main\\java\\tamplates\\coffeeinter (3).png")); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Segoe Script", 3, 48)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(64, 38, 12));
@@ -115,10 +117,6 @@ public class Inicio extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(307, 307, 307))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -129,7 +127,10 @@ public class Inicio extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(304, 304, 304)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(301, 301, 301)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(118, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
