@@ -15,7 +15,6 @@ public class inicioCliente extends javax.swing.JFrame {
      */
     public inicioCliente() {
         initComponents();
-        this.setVisible(true);
         this.setLocationRelativeTo(null);
     }
 
