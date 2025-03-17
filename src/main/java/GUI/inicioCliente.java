@@ -16,7 +16,6 @@ public class inicioCliente extends javax.swing.JFrame {
     public inicioCliente() {
         initComponents();
         this.setVisible(true);
-        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -37,7 +36,7 @@ public class inicioCliente extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JPasswordField();
         chVer = new javax.swing.JCheckBox();
-        btnRegistrarse = new javax.swing.JButton();
+        btnRegistrar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         lblLinkRegistro = new javax.swing.JLabel();
 
@@ -86,11 +85,11 @@ public class inicioCliente extends javax.swing.JFrame {
             }
         });
 
-        btnRegistrarse.setBackground(new java.awt.Color(250, 204, 46));
-        btnRegistrarse.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnRegistrarse.setForeground(new java.awt.Color(255, 255, 255));
-        btnRegistrarse.setText("Inicio de sesion");
-        btnRegistrarse.setBorder(null);
+        btnRegistrar.setBackground(new java.awt.Color(250, 204, 46));
+        btnRegistrar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrar.setText("Inicio de sesion");
+        btnRegistrar.setBorder(null);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -125,7 +124,7 @@ public class inicioCliente extends javax.swing.JFrame {
                                     .addComponent(txtCorreo, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtPassword, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnRegistrarse, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
+                                    .addComponent(btnRegistrar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel5)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -153,7 +152,7 @@ public class inicioCliente extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(chVer)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnRegistrarse, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
@@ -219,7 +218,7 @@ public class inicioCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnRegistrarse;
+    private javax.swing.JButton btnRegistrar;
     private javax.swing.JCheckBox chVer;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
