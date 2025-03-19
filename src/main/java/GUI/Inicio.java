@@ -2,12 +2,19 @@ package GUI;
 
 import conexion.conexiondb;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.Timer;
 
 public class Inicio extends javax.swing.JFrame {
 
+    private int index = 1;
+    private final String[] URLs = {"src/main/java/tamplates/fondoCarrusel1.jpg", "src/main/java/tamplates/fondoCarrusel2.jpg"};
+
+    
     conexiondb conect = conexiondb.getInstance();
     
     public Inicio() {
@@ -15,7 +22,20 @@ public class Inicio extends javax.swing.JFrame {
         this.setVisible(true);
         this.setLocationRelativeTo(null);
         conect.getConexion();
-        setImageLabel(carrusel, "C:\\Users\\dvill\\Documents\\NetBeansProjects\\Anteiku\\src\\main\\java\\tamplates\\fondoCarrusel1.jpg");
+        actualizarImagen();
+        iniciarCarrusel(3000);
+    }
+    
+    private void iniciarCarrusel(int delay){
+    
+        Timer timer = new Timer(delay, new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                index = (index + 1) % URLs.length;
+                actualizarImagen();
+            }
+        });
+        timer.start();
     }
     
     private void setImageLabel(JLabel labelName, String root){
@@ -26,6 +46,24 @@ public class Inicio extends javax.swing.JFrame {
             this.repaint();
         
     }
+    
+    private String setUrl(){
+                
+        if(index > 2) index = 1;
+        if(index < 1) index = 2;
+        
+        return URLs[index - 1];
+        
+    }
+    
+    private void actualizarImagen(){
+    
+        String nuevaUrl = setUrl();
+        
+        setImageLabel(carrusel, nuevaUrl);
+        
+    }
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -136,6 +174,11 @@ public class Inicio extends javax.swing.JFrame {
         jPanel4.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
         jButton4.setText(">");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 110, -1, -1));
 
         carrusel.setIcon(new javax.swing.ImageIcon("C:\\Users\\dvill\\Documents\\NetBeansProjects\\Anteiku\\src\\main\\java\\tamplates\\fondoCarrusel1.jpg")); // NOI18N
@@ -233,8 +276,18 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        
+        index --;
+        
+        actualizarImagen();
+        
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        index ++;
+        
+        actualizarImagen();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
