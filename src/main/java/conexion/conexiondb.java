@@ -7,7 +7,7 @@ public class conexiondb {
     private static conexiondb instance;
     private Connection conection;
     
-    private final String URL = "jdbc:postgresql://192.168.10.188:5432/anteiku";
+    private final String URL = "jdbc:postgresql://localhost:5432/anteiku";
     private final String USER = "postgres";
     private final String PASS = "Dani0418!0";
     

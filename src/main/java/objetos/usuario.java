@@ -1,5 +1,7 @@
 package objetos;
 
+import java.sql.Date;
+
 public class usuario {
    
     private long cedulaUsuario;
@@ -9,11 +11,12 @@ public class usuario {
     private String cotraseniaUsuario;
     private String telefonoUsuario;
     private String rolUsuario;
+    private Date fechaNacimiento;
 
     public usuario() {
     }
 
-    public usuario(long cedulaUsuario, String nombreUsuario, String apellidoUsuario, String correoUsuario, String cotraseniaUsuario, String telefonoUsuario, String rolUsuario) {
+    public usuario(long cedulaUsuario, String nombreUsuario, String apellidoUsuario, String correoUsuario, String cotraseniaUsuario, String telefonoUsuario, String rolUsuario, Date fechaNacimiento) {
         this.cedulaUsuario = cedulaUsuario;
         this.nombreUsuario = nombreUsuario;
         this.apellidoUsuario = apellidoUsuario;
@@ -21,6 +24,7 @@ public class usuario {
         this.cotraseniaUsuario = cotraseniaUsuario;
         this.telefonoUsuario = telefonoUsuario;
         this.rolUsuario = rolUsuario;
+        this.fechaNacimiento = fechaNacimiento;
     }
 
     public long getCedulaUsuario() {
@@ -78,5 +82,13 @@ public class usuario {
     public void setRolUsuario(String rolUsuario) {
         this.rolUsuario = rolUsuario;
     }
-    
+
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
 }
