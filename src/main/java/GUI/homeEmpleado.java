@@ -2126,6 +2126,8 @@ public class homeEmpleado extends javax.swing.JFrame {
         u.setFechaNacimiento(fechaNacimientoSQL);
         u.setGenero(genero);
 
+        //hola
+        
         cliente c = new cliente();
         c.setCedulaUsuario(cedula);
 
