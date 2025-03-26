@@ -23,7 +23,7 @@ public class conexiondb {
         }
     }
     
-     public static conexiondb getInstance() {
+    public static conexiondb getInstance() {
         if (instance == null) {
             instance = new conexiondb();
         }

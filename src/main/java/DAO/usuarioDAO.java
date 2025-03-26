@@ -12,12 +12,12 @@ import objetos.usuario;
 public class usuarioDAO implements crud<usuario>{
 
     private static final String QUERY_INSERT = "INSERT INTO usuario (cedula_usuario, nombre_usuario, apellido_usuario, correo_usuario, contrasenia, telefono_usuario, "
-            + "roi_usuario, fecha_nacimiento) VALUES (?,?,?,?,?,?,?,?)";
+            + "rol_usuario, fecha_nacimiento, genero) VALUES (?,?,?,?,?,?,?,?,?)";
     private static final String QUERY_SELECT_ALL = "SELECT * FROM usuario";
     private static final String QUERY_SELECT_ONE = "SELECT * FROM usuario WHERE cedula_usuario = ?";
     private static final String QUERY_UPDATE = "UPDATE usuario "
             + "SET nombre_usuario = ?, apellido_usuario = ?, correo_usuario = ?, "
-            + "contrasenia = ?, telefono_usuario = ?, rol_usuario = ?, fecha_nacimiento = ?";
+            + "contrasenia = ?, telefono_usuario = ?, rol_usuario = ?, fecha_nacimiento = ?, genero = ?";
     private static final String QUERY_DELETE = "DELETE FROM usuario WHERE cedula_usuario = ?";
     
     @Override
@@ -49,11 +49,11 @@ public class usuarioDAO implements crud<usuario>{
             pst.setString(2, u.getNombreUsuario());
             pst.setString(3, u.getApellidoUsuario());
             pst.setString(4, u.getCorreoUsuario());
-            pst.setString(5, u.getCorreoUsuario());
-            pst.setString(6, u.getCotraseniaUsuario());
-            pst.setString(7, u.getTelefonoUsuario());
-            pst.setString(8, u.getRolUsuario());
-            pst.setDate(9, (java.sql.Date) u.getFechaNacimiento());
+            pst.setString(5, u.getCotraseniaUsuario());
+            pst.setString(6, u.getTelefonoUsuario());
+            pst.setString(7, u.getRolUsuario());
+            pst.setDate(8, (java.sql.Date) u.getFechaNacimiento());
+            pst.setString(9, u.getGenero());
             
             return pst.executeUpdate() > 0;
             
@@ -114,6 +114,7 @@ public class usuarioDAO implements crud<usuario>{
             pst.setString(5, u.getTelefonoUsuario());
             pst.setString(6, u.getRolUsuario());
             pst.setDate(7, u.getFechaNacimiento());
+            pst.setString(8, u.getGenero());
             
             return pst.executeUpdate() > 0;
             

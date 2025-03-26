@@ -12,11 +12,12 @@ public class usuario {
     private String telefonoUsuario;
     private String rolUsuario;
     private Date fechaNacimiento;
+    private String genero;
 
     public usuario() {
     }
 
-    public usuario(long cedulaUsuario, String nombreUsuario, String apellidoUsuario, String correoUsuario, String cotraseniaUsuario, String telefonoUsuario, String rolUsuario, Date fechaNacimiento) {
+    public usuario(long cedulaUsuario, String nombreUsuario, String apellidoUsuario, String correoUsuario, String cotraseniaUsuario, String telefonoUsuario, String rolUsuario, Date fechaNacimiento, String genero) {
         this.cedulaUsuario = cedulaUsuario;
         this.nombreUsuario = nombreUsuario;
         this.apellidoUsuario = apellidoUsuario;
@@ -25,6 +26,7 @@ public class usuario {
         this.telefonoUsuario = telefonoUsuario;
         this.rolUsuario = rolUsuario;
         this.fechaNacimiento = fechaNacimiento;
+        this.genero = genero;
     }
 
     public long getCedulaUsuario() {
@@ -90,5 +92,15 @@ public class usuario {
     public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+   
 
 }
