@@ -1,13 +1,13 @@
-package DAO;
+package DataAccesObject;
 
-import interfaces.crud;
+import inferfaceGeneral.crud;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import objetos.nutriente;
+import clasesDeObjeto.nutriente;
 
 public class nutrienteDAO implements crud<nutriente>{
 
@@ -17,7 +17,7 @@ public class nutrienteDAO implements crud<nutriente>{
     @Override
     public List<nutriente> listar() {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ALL);
                 ResultSet rs = pst.executeQuery()){
         
@@ -37,7 +37,7 @@ public class nutrienteDAO implements crud<nutriente>{
     @Override
     public boolean crear(nutriente i) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_INSERT)){
         
             pst.setLong(1, i.getIdNutriente());

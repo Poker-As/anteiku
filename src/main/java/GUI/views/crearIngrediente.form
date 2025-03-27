@@ -277,7 +277,7 @@
                 <Property name="text" type="java.lang.String" value="Ingredientes"/>
               </Properties>
             </Component>
-            <Component class="componente.ButtonRound" name="btnCerrar">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnCerrar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -300,7 +300,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="componente.ButtonRound" name="btnAgregar">
+        <Component class="GUI.componentesSwing.ButtonRound" name="btnAgregar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="22" green="22" red="22" type="rgb"/>
@@ -382,7 +382,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="componente.ButtonRound" name="btnAgregarIngrediente">
+        <Component class="GUI.componentesSwing.ButtonRound" name="btnAgregarIngrediente">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="22" green="22" red="22" type="rgb"/>
@@ -403,7 +403,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarIngredienteActionPerformed"/>
           </Events>
         </Component>
-        <Component class="componente.ButtonRound" name="btnMostrar">
+        <Component class="GUI.componentesSwing.ButtonRound" name="btnMostrar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="22" green="22" red="22" type="rgb"/>
@@ -472,7 +472,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtCantidad">
         </Component>
-        <Component class="componente.ButtonRound" name="btnCrearNutriente">
+        <Component class="GUI.componentesSwing.ButtonRound" name="btnCrearNutriente">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="22" green="22" red="22" type="rgb"/>

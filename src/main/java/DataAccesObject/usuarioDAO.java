@@ -1,13 +1,13 @@
-package DAO;
+package DataAccesObject;
 
-import interfaces.crud;
+import inferfaceGeneral.crud;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import objetos.usuario;
+import clasesDeObjeto.usuario;
 
 public class usuarioDAO implements crud<usuario>{
 
@@ -23,7 +23,7 @@ public class usuarioDAO implements crud<usuario>{
     @Override
     public List<usuario> listar() {
         
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ALL);
                 ResultSet rs = pst.executeQuery()){
         
@@ -42,7 +42,7 @@ public class usuarioDAO implements crud<usuario>{
     @Override
     public boolean crear(usuario u) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_INSERT)){
         
             pst.setLong(1, u.getCedulaUsuario());
@@ -67,7 +67,7 @@ public class usuarioDAO implements crud<usuario>{
     @Override
     public boolean buscar(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ONE)){
         
             pst.setLong(1, id);
@@ -85,7 +85,7 @@ public class usuarioDAO implements crud<usuario>{
     @Override
     public usuario obtener(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_INSERT)){
         
             pst.setLong(1, id);
@@ -104,7 +104,7 @@ public class usuarioDAO implements crud<usuario>{
     @Override
     public boolean modificar(usuario u) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_UPDATE)){
         
             pst.setString(1, u.getNombreUsuario());
@@ -128,7 +128,7 @@ public class usuarioDAO implements crud<usuario>{
     @Override
     public boolean eliminar(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_DELETE)){
         
             pst.setLong(1, id);

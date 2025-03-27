@@ -1,4 +1,4 @@
-package objetos;
+package clasesDeObjeto;
 
 public class nutriente {
    

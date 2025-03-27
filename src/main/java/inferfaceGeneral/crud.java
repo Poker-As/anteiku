@@ -1,4 +1,4 @@
-package interfaces;
+package inferfaceGeneral;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -1,6 +1,6 @@
-package DAO;
+package DataAccesObject;
 
-import interfaces.crud;
+import inferfaceGeneral.crud;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import objetos.empleado;
+import clasesDeObjeto.empleado;
 
 public class empleadoDAO implements crud<empleado>{
 
@@ -31,7 +31,7 @@ public class empleadoDAO implements crud<empleado>{
     @Override
     public List<empleado> listar() {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ALL);
                 ResultSet rs = pst.executeQuery()){
         
@@ -51,7 +51,7 @@ public class empleadoDAO implements crud<empleado>{
     @Override
     public boolean crear(empleado e) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_INSERT)){
         
             pst.setLong(1, e.getCedulaUsuario());
@@ -71,7 +71,7 @@ public class empleadoDAO implements crud<empleado>{
     @Override
     public boolean buscar(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ONE)){
         
             pst.setLong(1, id);
@@ -89,7 +89,7 @@ public class empleadoDAO implements crud<empleado>{
     @Override
     public empleado obtener(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ONE)){
         
             pst.setLong(1, id);
@@ -113,7 +113,7 @@ public class empleadoDAO implements crud<empleado>{
     @Override
     public boolean eliminar(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_DELETE)){
         
             pst.setLong(1, id);

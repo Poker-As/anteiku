@@ -1,10 +1,11 @@
-package GUI;
+package GUI.cliente;
 
-import DAO.clienteDAO;
-import DAO.usuarioDAO;
+import GUI.cliente.loginCliente;
+import DataAccesObject.clienteDAO;
+import DataAccesObject.usuarioDAO;
 import javax.swing.JOptionPane;
-import objetos.cliente;
-import objetos.usuario;
+import clasesDeObjeto.cliente;
+import clasesDeObjeto.usuario;
 
 public class registroCliente extends javax.swing.JFrame {
 

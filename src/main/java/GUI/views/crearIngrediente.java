@@ -1,13 +1,13 @@
 package GUI.views;
 
-import DAO.ingredienteDAO;
-import DAO.nutrienteDAO;
+import DataAccesObject.ingredienteDAO;
+import DataAccesObject.nutrienteDAO;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
-import objetos.ingrediente;
-import objetos.nutriente;
+import clasesDeObjeto.ingrediente;
+import clasesDeObjeto.nutriente;
 
 public class crearIngrediente extends javax.swing.JFrame {
 
@@ -59,8 +59,8 @@ public class crearIngrediente extends javax.swing.JFrame {
         cbNutriente = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        btnCerrar = new componente.ButtonRound();
-        btnAgregar = new componente.ButtonRound();
+        btnCerrar = new GUI.componentesSwing.ButtonRound();
+        btnAgregar = new GUI.componentesSwing.ButtonRound();
         jLabel4 = new javax.swing.JLabel();
         txtNombreIngrediente = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
@@ -68,15 +68,15 @@ public class crearIngrediente extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         areaIngrediente = new javax.swing.JTextArea();
-        btnAgregarIngrediente = new componente.ButtonRound();
-        btnMostrar = new componente.ButtonRound();
+        btnAgregarIngrediente = new GUI.componentesSwing.ButtonRound();
+        btnMostrar = new GUI.componentesSwing.ButtonRound();
         txtIdNutriente = new javax.swing.JTextField();
         lblIdNutriente = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         lblCantidad = new javax.swing.JLabel();
         txtCantidad = new javax.swing.JTextField();
-        btnCrearNutriente = new componente.ButtonRound();
+        btnCrearNutriente = new GUI.componentesSwing.ButtonRound();
         lblPorcion = new javax.swing.JLabel();
         txtPorcion = new javax.swing.JTextField();
 
@@ -501,11 +501,11 @@ public class crearIngrediente extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea areaIngrediente;
-    private componente.ButtonRound btnAgregar;
-    private componente.ButtonRound btnAgregarIngrediente;
-    private componente.ButtonRound btnCerrar;
-    private componente.ButtonRound btnCrearNutriente;
-    private componente.ButtonRound btnMostrar;
+    private GUI.componentesSwing.ButtonRound btnAgregar;
+    private GUI.componentesSwing.ButtonRound btnAgregarIngrediente;
+    private GUI.componentesSwing.ButtonRound btnCerrar;
+    private GUI.componentesSwing.ButtonRound btnCrearNutriente;
+    private GUI.componentesSwing.ButtonRound btnMostrar;
     private javax.swing.JComboBox<String> cbNutriente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

@@ -1,13 +1,13 @@
-package DAO;
+package DataAccesObject;
 
-import interfaces.crud;
+import inferfaceGeneral.crud;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import objetos.administrador;
+import clasesDeObjeto.administrador;
 
 public class administradorDAO implements crud<administrador>{
 
@@ -28,7 +28,7 @@ public class administradorDAO implements crud<administrador>{
     @Override
     public List<administrador> listar() {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ALL);
                 ResultSet rs = pst.executeQuery()){
         
@@ -47,7 +47,7 @@ public class administradorDAO implements crud<administrador>{
     @Override
     public boolean crear(administrador a) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_INSERT)){
         
             pst.setLong(1, a.getCedulaUsuario());
@@ -64,7 +64,7 @@ public class administradorDAO implements crud<administrador>{
     @Override
     public boolean buscar(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ONE)){
         
             pst.setLong(1, id);
@@ -82,7 +82,7 @@ public class administradorDAO implements crud<administrador>{
     @Override
     public administrador obtener(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ONE)){
         
             pst.setLong(1, id);
@@ -106,7 +106,7 @@ public class administradorDAO implements crud<administrador>{
     @Override
     public boolean eliminar(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_DELETE)){
         
             pst.setLong(1, id);

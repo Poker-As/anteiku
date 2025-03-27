@@ -1,6 +1,6 @@
-package DAO;
+package DataAccesObject;
 
-import interfaces.crud;
+import inferfaceGeneral.crud;
 import java.sql.Array;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
-import objetos.ingrediente;
-import objetos.nutriente;
+import clasesDeObjeto.ingrediente;
+import clasesDeObjeto.nutriente;
 
 public class ingredienteDAO implements crud<ingrediente>{
 
@@ -25,7 +25,7 @@ public class ingredienteDAO implements crud<ingrediente>{
     @Override
     public List<ingrediente> listar() {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ALL);
                 ResultSet rs = pst.executeQuery()){
         
@@ -44,7 +44,7 @@ public class ingredienteDAO implements crud<ingrediente>{
     @Override
     public boolean crear(ingrediente i) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_INSERT)){
         
             pst.setLong(1, i.getIdIngrediente());
@@ -69,7 +69,7 @@ public class ingredienteDAO implements crud<ingrediente>{
     @Override
     public boolean buscar(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ONE)){
         
             pst.setLong(1, id);
@@ -87,7 +87,7 @@ public class ingredienteDAO implements crud<ingrediente>{
     @Override
     public ingrediente obtener(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_SELECT_ONE)){
         
             pst.setLong(1, id);
@@ -106,7 +106,7 @@ public class ingredienteDAO implements crud<ingrediente>{
     @Override
     public boolean modificar(ingrediente i) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_UPDATE)){
         
             pst.setString(1, i.getNombreIngrediente());
@@ -124,7 +124,7 @@ public class ingredienteDAO implements crud<ingrediente>{
     @Override
     public boolean eliminar(long id) {
 
-        try(Connection con = conexion.conexiondb.getInstance().getConexion();
+        try(Connection con = conexionDataBase.conexiondb.getInstance().getConexion();
                 PreparedStatement pst = con.prepareStatement(QUERY_DELETE)){
         
             pst.setLong(1, id);

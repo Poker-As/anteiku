@@ -1,10 +1,10 @@
-package DAO;
+package DataAccesObject;
 
-import interfaces.crud;
+import inferfaceGeneral.crud;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
-import objetos.producto;
+import clasesDeObjeto.producto;
 
 public class productoDAO implements crud<producto>{
 

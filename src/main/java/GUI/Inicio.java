@@ -1,6 +1,8 @@
 package GUI;
 
-import conexion.conexiondb;
+import GUI.cliente.registroCliente;
+import GUI.cliente.loginCliente;
+import conexionDataBase.conexiondb;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -99,8 +101,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         carrusel = new javax.swing.JLabel();
-        btnIniciarSesion = new componente.ButtonRound();
-        btnRegistrarse = new componente.ButtonRound();
+        btnIniciarSesion = new GUI.componentesSwing.ButtonRound();
+        btnRegistrarse = new GUI.componentesSwing.ButtonRound();
         jLabel1 = new javax.swing.JLabel();
 
         jCheckBox1.setText("jCheckBox1");
@@ -369,8 +371,8 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private componente.ButtonRound btnIniciarSesion;
-    private componente.ButtonRound btnRegistrarse;
+    private GUI.componentesSwing.ButtonRound btnIniciarSesion;
+    private GUI.componentesSwing.ButtonRound btnRegistrarse;
     private javax.swing.JLabel carrusel;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

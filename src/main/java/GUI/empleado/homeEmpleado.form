@@ -152,7 +152,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="componente.PanelRound_1" name="menuPanelLateral">
+        <Container class="GUI.componentesSwing.PanelRound_1" name="menuPanelLateral">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="31" green="31" red="35" type="rgb"/>
@@ -841,7 +841,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Container class="componente.PanelRound_1" name="panelRound_12">
+            <Container class="GUI.componentesSwing.PanelRound_1" name="panelRound_12">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="35" green="35" red="3a" type="rgb"/>
@@ -937,7 +937,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="componente.PanelRound_1" name="panelRound_14">
+            <Container class="GUI.componentesSwing.PanelRound_1" name="panelRound_14">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="35" green="35" red="3a" type="rgb"/>
@@ -1035,7 +1035,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="componente.PanelRound_1" name="panelRound_15">
+            <Container class="GUI.componentesSwing.PanelRound_1" name="panelRound_15">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="35" green="35" red="3a" type="rgb"/>
@@ -1131,7 +1131,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="componente.PanelRound_1" name="panelRound_11">
+            <Container class="GUI.componentesSwing.PanelRound_1" name="panelRound_11">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="35" green="35" red="3a" type="rgb"/>
@@ -1369,7 +1369,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="componente.ButtonRound" name="btnInsertar">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnInsertar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1390,7 +1390,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInsertarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="componente.ButtonRound" name="btnMostrar">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnMostrar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1411,7 +1411,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMostrarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="componente.ButtonRound" name="btnEliminar">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnEliminar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1432,7 +1432,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="componente.ButtonRound" name="btnModificar">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnModificar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1453,7 +1453,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnModificarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="componente.ButtonRound" name="btnBuscar">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnBuscar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1911,7 +1911,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="componente.ButtonRound" name="btnInsertar1">
+                <Component class="GUI.componentesSwing.ButtonRound" name="btnInsertar1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1929,7 +1929,7 @@
                     <Property name="roundTopRight" type="int" value="30"/>
                   </Properties>
                 </Component>
-                <Component class="componente.ButtonRound" name="btnMostrar1">
+                <Component class="GUI.componentesSwing.ButtonRound" name="btnMostrar1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1950,7 +1950,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMostrar1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="componente.ButtonRound" name="btnEliminar1">
+                <Component class="GUI.componentesSwing.ButtonRound" name="btnEliminar1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1971,7 +1971,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminar1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="componente.ButtonRound" name="btnModificar1">
+                <Component class="GUI.componentesSwing.ButtonRound" name="btnModificar1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="22" green="22" red="22" type="rgb"/>
@@ -1992,7 +1992,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnModificar1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="componente.ButtonRound" name="btnBuscar1">
+                <Component class="GUI.componentesSwing.ButtonRound" name="btnBuscar1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="22" green="22" red="22" type="rgb"/>
@@ -2221,7 +2221,7 @@
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="componente.ButtonRound" name="agregarIngrediente">
+                <Component class="GUI.componentesSwing.ButtonRound" name="agregarIngrediente">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="22" green="22" red="22" type="rgb"/>
@@ -2239,7 +2239,7 @@
                     <Property name="roundTopRight" type="int" value="30"/>
                   </Properties>
                 </Component>
-                <Component class="componente.ButtonRound" name="btnCrearIngrediente">
+                <Component class="GUI.componentesSwing.ButtonRound" name="btnCrearIngrediente">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="22" green="22" red="22" type="rgb"/>
@@ -2462,7 +2462,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="componente.ButtonRound" name="btnInsertar2">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnInsertar2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -2483,7 +2483,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInsertar2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="componente.ButtonRound" name="btnMostrar2">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnMostrar2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -2504,7 +2504,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMostrar2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="componente.ButtonRound" name="btnEliminar2">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnEliminar2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -2525,7 +2525,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminar2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="componente.ButtonRound" name="btnModificar2">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnModificar2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>
@@ -2546,7 +2546,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnModificar2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="componente.ButtonRound" name="btnBuscar2">
+            <Component class="GUI.componentesSwing.ButtonRound" name="btnBuscar2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="22" green="22" red="22" type="rgb"/>

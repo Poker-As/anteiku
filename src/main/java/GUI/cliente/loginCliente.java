@@ -1,4 +1,4 @@
-package GUI;
+package GUI.cliente;
 
 public class loginCliente extends javax.swing.JFrame {
 

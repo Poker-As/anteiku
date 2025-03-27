@@ -1,4 +1,4 @@
-package objetos;
+package clasesDeObjeto;
 
 import java.util.List;
 

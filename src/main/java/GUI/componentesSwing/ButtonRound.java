@@ -1,4 +1,4 @@
-package componente;
+package GUI.componentesSwing;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -7,9 +7,10 @@ import java.awt.Shape;
 import java.awt.geom.Area;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.RoundRectangle2D;
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class PanelRound_1 extends JPanel {
+public class ButtonRound extends JButton {
 
     public int getRoundTopLeft() {
         return roundTopLeft;
@@ -52,7 +53,7 @@ public class PanelRound_1 extends JPanel {
     private int roundBottomLeft = 0;
     private int roundBottomRight = 0;
 
-    public PanelRound_1() {
+    public ButtonRound() {
         setOpaque(false);
     }
 

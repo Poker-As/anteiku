@@ -1,4 +1,4 @@
-package GUI;
+package GUI.empleado;
 
 public class registroEmpleado extends javax.swing.JFrame {
 
